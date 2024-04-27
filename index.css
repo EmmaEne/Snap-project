@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+}
+#logo {
+  width: 85px;
+  height: 30px;
+  margin-top: 10px;
+}
+select {
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+p {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+select,
+p,
+a,
+button,
+.txt {
+  color: gray;
+  text-decoration: none;
+}
+.signup {
+  width: 20%;
+  height: 60px;
+}
+button {
+  font-size: 16px;
+  font-weight: bold;
+  background: none;
+  margin-left: 5px;
+  border: 2px solid;
+  width: 105px;
+  height: 40px;
+  border-radius: 10px;
+}
+#login {
+  border: none;
+}
+#info span {
+  display: block;
+}
+@media only screen and (min-width: 992px) {
+  #bars {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  select,
+  a,
+  .signup button {
+    display: none;
+  }
+  #bars {
+    display: block;
+  }
+}
+#hero {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 500px;
+
+}
+#hero span{
+  display: block;
+}
+.big {
+  font-weight: bold;
+  font-size: 60px;
+}
+#bigTwo{
+  margin-bottom: 30px;
+}
+.txt {
+  font-weight: bold;
+} 
+#hero-img {
+  width: 30%;
+  height: 500px;
+  background: url(img/image-hero-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#hero-text {
+  margin-top: 7%;
+}
+#hero button{
+  background-color: black;
+  color: white;
+  width: 32%;
+  margin-bottom: 47px;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 600px) {
+  #hero{
+    flex-direction: column-reverse;
+    height: 100%;
+    /* border: solid red; */
+  }
+  #hero-img {
+    width: 100vw;
+    height: 300px;
+    background: url(img/image-hero-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: solid; */
+  }
+  #hero-text{
+    /* border: solid; */
+  }
+  #hero-text .big{
+    font-size: 35px;
+    display: inline-block;
+    padding-left: 10px;
+  }
+}
+/*
+
+*/
+/* #hero-img img {
+  width: 100%;
+  height: 100%;
+} */
+/* 
+
+#info button {
+  color: white;
+  background-color: black;
+  width: 34%;
+  height: 45px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+#hero-text,
+#hero-img {
+  height: 490px;
+}
+.logos {
+  margin-top: 16%;
+  width: 120%;
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  width: 18%;
+  height: 20%;
+}
+#bars {
+  font-size: 30px;
+}
