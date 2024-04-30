@@ -13,6 +13,35 @@ header {
   width: 100%;
   height: 80px;
 }
+.navigation {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 10px;
+  height: 100vh;
+  width: 50vw;
+  color: black;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 20px;
+  gap: 20px;
+  /* padding-top: 90px; */
+}
+.navigation button {
+  width: 95%;
+  display: block;
+}
+#my-login{
+  border: none;
+
+}
+#close i{
+  position: absolute;
+  right: 0;
+  font-size: 40px;
+}
 .nav {
   display: flex;
   gap: 20px;
@@ -54,6 +83,7 @@ button {
   width: 105px;
   height: 40px;
   border-radius: 10px;
+  cursor: pointer;
 }
 #login {
   border: none;
@@ -61,11 +91,41 @@ button {
 #info span {
   display: block;
 }
-@media only screen and (min-width: 992px) {
+#login:hover {
+  border: 2px solid;
+}
+#signup:hover {
+  background-color: black;
+  color: white;
+}
+/* Tablet Header */
+@media only screen and (min-width: 600px) {
   #bars {
     display: none;
   }
+  .signup {
+    width: 30%;
+  }
+  #signup,
+  #login {
+    width: 45%;
+  }
+
+  select,
+  a {
+    font-size: 16px;
+  }
+  #hero {
+    margin-top: 10px;
+  }
 }
+/* Desktop Header */
+@media only screen and (min-width: 768px) {
+  .signup {
+    width: 20%;
+  }
+}
+/* Header for small screens */
 @media only screen and (max-width: 600px) {
   select,
   a,
@@ -74,6 +134,8 @@ button {
   }
   #bars {
     display: block;
+    margin-left: 50%;
+    font-size: 30px;
   }
 }
 #hero {
@@ -81,21 +143,20 @@ button {
   justify-content: space-evenly;
   width: 100%;
   height: 500px;
-
 }
-#hero span{
+#hero span {
   display: block;
 }
 .big {
   font-weight: bold;
   font-size: 60px;
 }
-#bigTwo{
+#bigTwo {
   margin-bottom: 30px;
 }
 .txt {
   font-weight: bold;
-} 
+}
 #hero-img {
   width: 30%;
   height: 500px;
@@ -106,18 +167,19 @@ button {
 #hero-text {
   margin-top: 7%;
 }
-#hero button{
+#hero button {
   background-color: black;
   color: white;
   width: 32%;
   margin-bottom: 47px;
   margin-top: 30px;
 }
+/* Hero section for small screens */
 @media only screen and (max-width: 600px) {
-  #hero{
+  #hero {
     flex-direction: column-reverse;
     height: 100%;
-    /* border: solid red; */
+    justify-content: center;
   }
   #hero-img {
     width: 100vw;
@@ -125,48 +187,25 @@ button {
     background: url(img/image-hero-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    /* border: solid; */
   }
-  #hero-text{
-    /* border: solid; */
-  }
-  #hero-text .big{
+  #hero-text .big {
     font-size: 35px;
     display: inline-block;
-    padding-left: 10px;
   }
-}
-/*
-
-*/
-/* #hero-img img {
-  width: 100%;
-  height: 100%;
-} */
-/* 
-
-#info button {
-  color: white;
-  background-color: black;
-  width: 34%;
-  height: 45px;
-  border-radius: 15px;
-  margin-top: 50px;
-}
-#hero-text,
-#hero-img {
-  height: 490px;
-}
-.logos {
-  margin-top: 16%;
-  width: 120%;
-  display: flex;
-  justify-content: space-around;
-}
-.logos img {
-  width: 18%;
-  height: 20%;
-}
-#bars {
-  font-size: 30px;
+  #bigOne {
+    margin-left: 8%;
+  }
+  #bigTwo {
+    margin-left: 1.5%;
+  }
+  #hero-text .txt {
+    text-align: center;
+  }
+  #hero-text button {
+    margin-left: 33%;
+  }
+  .logos img {
+    width: 20%;
+    margin-left: 5%;
+  }
 }
