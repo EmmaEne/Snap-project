@@ -4,30 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snap</title>
-    <link rel="stylesheet" href="index.css" />
+   
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- navigation -->
-
     <header>
       <div id="blur"></div>
       <section class="nav">
         <img src="img/logo.svg" id="logo" />
-        <select name="feature" id="feature">
-          <option value="feature">
-            <i class="fa fa-calendar"></i>Features
-          </option>
-          <option value="feature">feature</option>
-          <option value="feature">feature</option>
-        </select>
-        <select name="company" id="company">
-          <option value="feature">company</option>
-          <option value="feature">feature</option>
-          <option value="feature">feature</option>
-        </select>
-        <p><a href="#">Career</a></p>
-        <p><a href="#">About</a></p>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle fw-bold" type="button" data-toggle="dropdown">Features
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a>To do</li>
+            <li><a href="#"></a>Calendar</li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle fw-bold" type="button" data-toggle="dropdown">Company
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a>To do</li>
+            <li><a href="#"></a>Calendar</li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+        <p><a href="#" class="links">Career</a></p>
+        <p><a href="#" class="links">About</a></p>
       </section>
       <div class="signup">
         <button id="login">Login</button>
@@ -35,18 +45,6 @@
         <i class="fa fa-bars" id="bars"></i>
       </div>
     </header>
-
-    <div class="navigation">
-      <span id="close"><i class="fa fa-close"></i></span>
-      
-      <h3>Features</h3>
-      <h3>Company</h3>
-      <h3>Career</h3>
-      <h3>About</h3>
-
-      <button id="my-login">Login</button>
-      <button id="signup">Register</button>
-    </div>
 
     <!-- hero section -->
     <section id="hero">
@@ -64,9 +62,38 @@
           <img src="img/client-maker.svg" />
         </div>
       </div>
-     
       <div id="hero-img"></div>
     </section>
+
+
+    <div class="navigation">
+      <span id="close"><i class="fa fa-close"></i></span>
+      <div class="dropdown" id="first">
+        <button class="btn dropdown-toggle fw-bold" type="button" data-toggle="dropdown">Features
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-link"></a>To do</li>
+          <li><a href="#" class="dropdown-link"></a>Calendar</li>
+          <li><a href="#" class="dropdown-link">Shop</a></li>
+        </ul>
+      </div>
+      <div class="dropdown" id="second">
+        <button class="btn dropdown-toggle fw-bold" type="button" data-toggle="dropdown">Company
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#"></a>To do</li>
+          <li><a href="#"></a>Calendar</li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+      <h3 class="links">Career</h3>
+      <h3 class="link">About</h3>
+      <button id="my-login">Login</button>
+      <button id="signup">Register</button>
+    </div>
+
     <script src="navbar.js"></script>
   </body>
 </html>
