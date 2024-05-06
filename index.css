@@ -231,3 +231,43 @@ button {
     margin-left: 11%;
   }
 }
+.registerDiv {
+  position: fixed;
+  top: 10%;
+  background-color: white;
+  width: 35%;
+  height: 75%;
+  left: 35%;
+  box-shadow: 1px 1px 2px grey;
+  border-radius: 10px;
+  border: 0.1px solid rgb(215, 214, 214);
+  padding-top: 3%;
+  visibility: hidden;
+}
+.registerDiv h2{
+  text-align: center;
+}
+.registerDiv button{
+  margin-left: 30%;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.registerDiv span,a{
+  font-size: 13px;
+  color: grey;
+}
+::placeholder{
+  padding-left: 10px;
+}
+form input{
+  display: block;
+  width: 80%;
+  height: 45px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+label{
+  margin-left: 10%;
+  font-weight: bold;
+}
