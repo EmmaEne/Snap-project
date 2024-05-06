@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snap</title>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -16,23 +19,64 @@
       <section class="nav">
         <img src="img/logo.svg" id="logo" />
         <div class="dropdown">
-          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
-            Feature
+          <button
+            type="button"
+            class="btn dropdown-toggle fw-bold"
+            data-bs-toggle="dropdown"
+          >
+            Features
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link 1</a></li>
-            <li><a class="dropdown-item" href="#">Link 2</a></li>
-            <li><a class="dropdown-item" href="#">Link 3</a></li>
+            <li>
+              <a class="dropdown-item fw-bold" href="#"
+                ><i
+                  class="fa fa-list"
+                  style="
+                    background-color: rgb(255, 55, 255);
+                    color: rgb(88, 88, 88);
+                  "
+                  ;
+                ></i>
+                Todo list</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item fw-bold" href="#"
+                ><i
+                  class="fa fa-calendar"
+                  style="background-color: rgba(0, 255, 255, 0.89)"
+                ></i>
+                Calendar</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item fw-bold" href="#"
+                ><i
+                  class="fa fa-bell"
+                  style="color: rgba(172, 172, 10, 0.796)"
+                ></i>
+                Reminders</a
+              >
+            </li>
+            <li>
+              <a href="#" class="dropdown-item fw-bold"
+                ><i class="fa fa-bullseye" style="color: rgb(255, 55, 255); background-color: grey; border-radius: 10px;"></i> Planning</a
+              >
+            </li>
           </ul>
         </div>
         <div class="dropdown">
-          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+          <button
+            type="button"
+            class="btn dropdown-toggle fw-bold"
+            data-bs-toggle="dropdown"
+          >
             Company
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link 1</a></li>
-            <li><a class="dropdown-item" href="#">Link 2</a></li>
-            <li><a class="dropdown-item" href="#">Link 3</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">History</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Our Team</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">Blog</a></li>
           </ul>
         </div>
         <p><a href="#" class="links">Career</a></p>
@@ -64,11 +108,14 @@
       <div id="hero-img"></div>
     </section>
 
-
     <div class="navigation">
       <span id="close"><i class="fa fa-close"></i></span>
       <div class="dropdown" id="first">
-        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+        <button
+          type="button"
+          class="btn dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
           Dropdown
         </button>
         <ul class="dropdown-menu">
@@ -78,7 +125,11 @@
         </ul>
       </div>
       <div class="dropdown" id="second">
-        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+        <button
+          type="button"
+          class="btn dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
           Dropdown
         </button>
         <ul class="dropdown-menu">
@@ -97,11 +148,11 @@
       <h2>Register</h2>
       <form action="">
         <label for="Username">Username</label>
-        <input type="text" placeholder="Username e.g 'Emma Ene'">
+        <input type="text" placeholder="Username e.g 'Emma Ene'" />
         <label for="Email">Email</label>
-        <input type="text" placeholder="Email e.g emmaene@gmail.com">
+        <input type="text" placeholder="Email e.g emmaene@gmail.com" />
         <label for="Password">Password</label>
-        <input type="password" placeholder="Password e.g '1234'">
+        <input type="password" placeholder="Password e.g '1234'" />
         <button>Register</button>
         <span>or <a href="#">Signup</a></span>
       </form>
