@@ -73,9 +73,11 @@ p {
 .dropdown {
   font-size: 20px;
 }
+.dropdown button:focus {
+  border: none;
+}
 .dropdown button,
 .links,
-button,
 .txt {
   color: gray;
   text-decoration: none;
@@ -244,30 +246,31 @@ button {
   padding-top: 3%;
   visibility: hidden;
 }
-.registerDiv h2{
+.registerDiv h2 {
   text-align: center;
 }
-.registerDiv button{
+.registerDiv button {
   margin-left: 30%;
   background-color: black;
   color: white;
   border: none;
 }
-.registerDiv span,a{
+.registerDiv span,
+a {
   font-size: 13px;
   color: grey;
 }
-::placeholder{
+::placeholder {
   padding-left: 10px;
 }
-form input{
+form input {
   display: block;
   width: 80%;
   height: 45px;
   margin: auto;
   margin-bottom: 40px;
 }
-label{
+label {
   margin-left: 10%;
   font-weight: bold;
 }
