@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snap</title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -18,86 +13,53 @@
       <section class="nav">
         <img src="img/logo.svg" id="logo" />
         <div class="dropdown">
-          <button
-            type="button"
-            class="btn dropdown-toggle fw-bold"
-            data-bs-toggle="dropdown"
-          >
+          <button class="dropdown-btn">
             Features
+            <img src="img/icon-arrow-up.svg" id="icon-arrow-down"/>
           </button>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" style="display: none;">
             <li>
-              <a class="dropdown-item fw-bold" href="#"
-                ><i
-                  class="fa fa-list"
-                  style="
-                    background-color: rgb(255, 55, 255);
-                    color: rgb(88, 88, 88);
-                  "
-                  ;
-                ></i>
-                Todo list</a
-              >
+              <img src="img/icon-todo.svg" alt="" />
+              <a class="dropdown-item" href="#"> Todo list</a>
             </li>
             <li>
-              <a class="dropdown-item fw-bold" href="#"
-                ><i
-                  class="fa fa-calendar"
-                  style="background-color: rgba(0, 255, 255, 0.89)"
-                ></i>
-                Calendar</a
-              >
+              <img src="img/icon-calendar.svg" alt="" />
+              <a class="dropdown-item" href="#"> Calendar</a>
             </li>
             <li>
-              <a class="dropdown-item fw-bold" href="#"
-                ><i
-                  class="fa fa-bell"
-                  style="color: rgba(172, 172, 10, 0.796)"
-                ></i>
-                Reminders</a
-              >
+              <img src="img/icon-reminders.svg" alt="" />
+              <a class="dropdown-item" href="#"> Reminders</a>
             </li>
             <li>
-              <a href="#" class="dropdown-item fw-bold"
-                ><i
-                  class="fa fa-bullseye"
-                  style="
-                    color: rgb(255, 55, 255);
-                    background-color: grey;
-                    border-radius: 10px;
-                  "
-                ></i>
-                Planning</a
-              >
+              <img src="img/icon-planning.svg" alt="" />
+              <a href="#" class="dropdown-item"> Planning</a>
             </li>
           </ul>
         </div>
         <div class="dropdown">
-          <button
-            type="button"
-            class="btn dropdown-toggle fw-bold"
-            data-bs-toggle="dropdown"
-          >
+          <button type="button" class="dropdown-btn">
             Company
+            <img src="img/icon-arrow-up.svg" id="icon-arrow"/>
           </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item fw-bold" href="#">History</a></li>
-            <li><a class="dropdown-item fw-bold" href="#">Our Team</a></li>
-            <li><a class="dropdown-item fw-bold" href="#">Blog</a></li>
+          <ul class="dropdown-menu" style="display: none;">
+            <li><a class="dropdown-item" href="#">History</a></li>
+            <li><a class="dropdown-item" href="#">Our Team</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
           </ul>
         </div>
+
         <p><a href="#" class="links">Career</a></p>
         <p><a href="#" class="links">About</a></p>
       </section>
       <div class="signup">
         <button id="login">Login</button>
         <button id="signup">Register</button>
-        <i class="fa fa-bars" id="bars"></i>
+        <img src="img/icon-menu.svg" id="bars" />
       </div>
     </header>
 
     <!-- hero section -->
-    <section id="hero">
+     <section id="hero">
       <div id="hero-text">
         <span class="big" id="bigOne">Make </span>
         <span class="big" id="bigTwo">remote work </span>
@@ -192,7 +154,7 @@
       <button id="signup">Register</button>
     </div>
 
-    <div class="registerDiv">
+    <!-- <div class="registerDiv">
       <h2>Register</h2>
       <form action="">
         <label for="Username">Username</label>
@@ -204,8 +166,8 @@
         <button>Register</button>
         <span>or <a href="#">Signup</a></span>
       </form>
-    </div>
+    </div> -->
     <script src="navbar.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-</html>
+</html> 
+
