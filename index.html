@@ -13,9 +13,9 @@
       <section class="nav">
         <img src="img/logo.svg" id="logo" />
         <div class="dropdown">
-          <button class="dropdown-btn">
+          <button class="dropdown-btn" id="features-btn">
             Features
-            <img src="img/icon-arrow-up.svg" id="icon-arrow-down"/>
+            <img src="img/icon-arrow-up.svg" id="icon-arrow-features" class="icon-arrow"/>
           </button>
           <ul class="dropdown-menu" style="display: none;">
             <li>
@@ -37,9 +37,9 @@
           </ul>
         </div>
         <div class="dropdown">
-          <button type="button" class="dropdown-btn">
+          <button type="button" class="dropdown-btn" id="company-btn">
             Company
-            <img src="img/icon-arrow-up.svg" id="icon-arrow"/>
+            <img src="img/icon-arrow-up.svg" id="icon-arrow-company" class="icon-arrow"/>
           </button>
           <ul class="dropdown-menu" style="display: none;">
             <li><a class="dropdown-item" href="#">History</a></li>
@@ -47,7 +47,6 @@
             <li><a class="dropdown-item" href="#">Blog</a></li>
           </ul>
         </div>
-
         <p><a href="#" class="links">Career</a></p>
         <p><a href="#" class="links">About</a></p>
       </section>
@@ -78,76 +77,48 @@
     </section>
 
     <div class="navigation">
-      <span id="close"><i class="fa fa-close"></i></span>
-      <div class="dropdown" id="first">
-        <button
-          type="button"
-          class="btn dropdown-toggle fw-bold"
-          data-bs-toggle="dropdown"
-        >
-          Features
-        </button>
-        <ul class="dropdown-menu">
-          <li>
-            <a class="dropdown-item fw-bold" href="#"
-              ><i
-                class="fa fa-list"
-                style="
-                  background-color: rgb(255, 55, 255);
-                  color: rgb(88, 88, 88);
-                "
-                ;
-              ></i>
-              Todo list</a
-            >
-          </li>
-          <li>
-            <a class="dropdown-item fw-bold" href="#"
-              ><i
-                class="fa fa-calendar"
-                style="background-color: rgba(0, 255, 255, 0.89)"
-              ></i>
-              Calendar</a
-            >
-          </li>
-          <li>
-            <a class="dropdown-item fw-bold" href="#"
-              ><i
-                class="fa fa-bell"
-                style="color: rgba(172, 172, 10, 0.796)"
-              ></i>
-              Reminders</a
-            >
-          </li>
-          <li>
-            <a href="#" class="dropdown-item fw-bold"
-              ><i
-                class="fa fa-bullseye"
-                style="
-                  color: rgb(255, 55, 255);
-                  background-color: grey;
-                  border-radius: 10px;
-                "
-              ></i>
-              Planning</a
-            >
-          </li>
-        </ul>
+      <img src="img/icon-close-menu.svg" id="close-menu-btn">
+      <div class="dropdown-mobile">
+          <button class="dropdown-btn" id="features-btn-mobile">
+              Features
+              <img src="img/icon-arrow-up.svg" class="icon-arrow" id="icon-arrow-features-mobile"/>
+          </button>
+          <ul class="dropdown-menu-mobile" id="features-menu-mobile" style="display: none;">
+              <li>
+                  <img src="img/icon-todo.svg" alt="Todo icon" />
+                  <span class="dropdown-item">Todo list</span>
+              </li>
+              <li>
+                  <img src="img/icon-calendar.svg" alt="Calendar icon" />
+                  <span class="dropdown-item">Calendar</span>
+              </li>
+              <li>
+                  <img src="img/icon-reminders.svg" alt="Reminders icon" />
+                  <span class="dropdown-item">Reminders</span>
+              </li>
+              <li>
+                  <img src="img/icon-planning.svg" alt="Planning icon" />
+                  <span class="dropdown-item">Planning</span>
+              </li>
+          </ul>
       </div>
-      <div class="dropdown" id="second">
-        <button
-          type="button"
-          class="btn dropdown-toggle fw-bold"
-          data-bs-toggle="dropdown"
-        >
-          Company
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item fw-bold" href="#">History</a></li>
-          <li><a class="dropdown-item fw-bold" href="#">Our Team</a></li>
-          <li><a class="dropdown-item fw-bold" href="#">Blog</a></li>
-        </ul>
+      <div class="dropdown-mobile">
+          <button type="button" class="dropdown-btn" id="company-btn-mobile">
+              Company
+              <img src="img/icon-arrow-up.svg" class="icon-arrow" id="icon-arrow-company-mobile"/>
+          </button>
+          <ul class="dropdown-menu-mobile" id="company-menu-mobile" style="display: none;">
+              <li><span class="dropdown-item">History</span></li>
+              <li><span class="dropdown-item">Our Team</span></li>
+              <li><span class="dropdown-item">Blog</span></li>
+          </ul>
       </div>
+      <h3 class="links">Career</h3>
+      <h3 class="links">About</h3>
+      <button id="login-btn">Login</button>
+      <button id="register-btn">Register</button>
+  </div>
+  
       <h3 class="links">Career</h3>
       <h3 class="link">About</h3>
       <button id="my-login">Login</button>
