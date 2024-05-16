@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const bars = document.getElementById('bars');  // Assuming there's an element with this ID
 
   bars.addEventListener('click', () => {
-      navigation.style.width = "60vw";
+     navigation.style.visibility = 'visible';
       navigation.style.backgroundColor = "white";
       blur.style.display = "block";
   });
 
   closeBtn.addEventListener('click', () => {
-      navigation.style.width = "0vw";
+      navigation.style.visibility = 'hidden';
       blur.style.display = "none";
       navigation.style.backgroundColor = "transparent";
   });
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const dropdowns = document.querySelectorAll('.dropdown');
+  const dropdowns = document.querySelectorAll('.dropdown-desktop');
 
   dropdowns.forEach(dropdown => {
     const btn = dropdown.querySelector('.dropdown-btn');
